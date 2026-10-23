@@ -1,0 +1,40 @@
+# Python / local environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Colab / Jupyter
+.ipynb_checkpoints/
+
+# Secrets / local credentials
+.env
+.env.*
+!.env.example
+credentials.json
+token.json
+*service-account*.json
+*.pem
+
+# Local data: track descriptions and only small public examples
+data/*
+!data/README.md
+!data/samples/
+data/samples/*
+!data/samples/.gitkeep
+
+# Generated outputs stay out of Git
+outputs/*
+!outputs/.gitkeep
+
+# Model weights / large checkpoints (store in Google Drive)
+*.safetensors
+*.pt
+*.pth
+*.ckpt
+*.gguf
+*.onnx
+pytorch_model*.bin
