@@ -1,0 +1,33 @@
+# 계정·비밀정보
+.env
+.env.*
+!.env.example
+*.pem
+*.p12
+*.key
+*.secret
+
+# Colab/Jupyter 임시 파일
+.ipynb_checkpoints/
+__pycache__/
+*.py[cod]
+.DS_Store
+Thumbs.db
+
+# 모델/체크포인트 등 대용량 바이너리 (Google Drive에 저장)
+*.safetensors
+*.ckpt
+*.pt
+*.pth
+*.gguf
+*.onnx
+*.h5
+*.hdf5
+*.bin
+
+# 임시 실행 결과 (포트폴리오에 필요한 소형 결과는 outputs/에 별도 저장)
+outputs/tmp/
+outputs/temp/
+
+# 대용량 데이터 로컬 복사본을 만든 경우
+local_large_files/
